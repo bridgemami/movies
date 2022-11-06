@@ -11,6 +11,7 @@ function App() {
    <div className="App">
       <h1>Welcome to the Movies</h1>
       <p>Let's have some fun</p>
+      <p>kkkk</p>
     </div>
   );
 }
