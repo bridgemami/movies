@@ -10,6 +10,7 @@ function App() {
   return (
    <div className="App">
       <h1>Welcome to the Movies</h1>
+      <p>Let's have some fun</p>
     </div>
   );
 }
