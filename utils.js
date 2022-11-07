@@ -1,6 +1,7 @@
-let getMoviesByName = async (name, year) => {
+let getMoviesByName = async () => {
     try {
-    let apiMovie = await fetch(`http://www.omdbapi.com/?apikey=ed956c7d&t=${name}&y=${year}`)
+        let name = prompt('What movie would you like me to find?')
+    let apiMovie = await fetch(`http://www.omdbapi.com/?apikey=ed956c7d&t=${name}`)
     let response= await apiMovie.json()
     console.log(response)
     let poster= response.Poster;
