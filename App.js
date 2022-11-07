@@ -4,10 +4,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {getMoviesByName} from './utils'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-  getMoviesByName('Ant-Man')
+getMoviesByName();
 // const moviePoster= ()
 function MovieDetails() {
-
   return (
    <div className="App">
       <h1>Welcome to the Movies</h1>

@@ -4,11 +4,9 @@ let getMoviesByName = async () => {
     let apiMovie = await fetch(`http://www.omdbapi.com/?apikey=ed956c7d&t=${name}`)
     let response= await apiMovie.json()
     console.log(response)
-    let poster= response.Poster;
-    console.log(poster);
     let cap= response.Type.charAt(0).toUpperCase()
     let second= response.Type.slice(1)
-    document.getElementById('posters').src=`${poster}`;
+    document.getElementById('posters').src=`${response.Poster}`;
     document.getElementById('posters').alt=`${response.Title} poster`;
   document.getElementById('title').innerHTML= `${response.Title}`;
   document.getElementById('type').innerHTML= `${cap}${second}`;
