@@ -15,9 +15,7 @@ let getMoviesByName = async () => {
   document.getElementById('length').innerHTML= `${response.Runtime}`;
   document.getElementById('genre').innerHTML= `${response.Genre}`;
   document.getElementById('plot').innerHTML= `${response.Plot}`;
-  document.getElementById('cast').innerHTML= `${response.Actors}`;
-
-     
+  document.getElementById('cast').innerHTML= `${response.Actors}`;  
     }
     catch (err) {
     console.error(`The error is ${err}`)
