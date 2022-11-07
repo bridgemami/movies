@@ -2,7 +2,6 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {getMoviesByName} from './utils'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 getMoviesByName();
 // const moviePoster= ()
