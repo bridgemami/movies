@@ -1,6 +1,6 @@
 let getMoviesByName = async () => {
     try {
-        let name = prompt('What movie would you like me to find?')
+        let name = prompt('Would you like me to find a movie or a television show?')
     let apiMovie = await fetch(`http://www.omdbapi.com/?apikey=ed956c7d&t=${name}`)
     let response= await apiMovie.json()
     console.log(response)

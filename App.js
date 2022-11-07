@@ -9,8 +9,7 @@ getMoviesByName();
 function MovieDetails() {
   return (
    <div className="App">
-      <h1>Welcome to the Movies</h1>
-      <p>Let's have some fun</p>
+      <h1>Looking for Media</h1>
       <div id='movieBox'>
         <h2 id='title'></h2>
         <div className='container'>
